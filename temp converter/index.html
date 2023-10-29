@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="inputsection">
+            <label for="temperature">Enter Temperature:</label> <br>
+            <input type="number" id="temperature" placeholder="Enter temperature" />
+            <label for="inputUnit">in</label>
+            <select id="inputUnit">
+                <option value="celsius">&deg;C</option>
+                <option value="fahrenheit">&deg;F</option>
+                <option value="kelvin">K</option>
+            </select>
+            <br>
+            <label for="outputUnit">convert to</label>
+            <select id="outputUnit">
+                <option value="celsius">&deg;celsius</option>
+                <option value="fahrenheit">&deg;fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
+        </div>
+
+        <div class="resultsection">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div id="resultValueSection">
+                    <div id="convertedDegree">32&deg;</div>
+                    <h3 id="convertedUnit">F</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

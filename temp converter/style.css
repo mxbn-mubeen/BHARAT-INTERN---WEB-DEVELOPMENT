@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url(bg.jpg)no-repeat;
+    background-size: cover;
+   
+   
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    width: 1000px;
+   
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover {
+   color: white;
+    
+}
+
+.inputsection,
+.resultsection {
+    padding: 20px;
+}
+
+input[type="number"],
+select {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"]:hover,
+select:hover {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        border: none;
+        box-shadow: none;
+    }
+
+    .inputsection,
+    .resultsection {
+        padding: 10px;
+    }
+}
